@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us" style="font-size:100%">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Portfolio of Fionn Cassidy – software developer, cybersecurity enthusiast, and project creator.">
+    <title>Fionn Cassidy Portfolio</title>
+    <link rel="canonical" href="https://example.com/">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:site_name" content="Fionn Cassidy Portfolio">
+    <meta property="og:title" content="Fionn Cassidy Portfolio">
+    <meta property="og:description" content="Technical projects, coding work, and cybersecurity experiments.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:;base64,=">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <h1><a href="/">Fionn Cassidy</a></h1>
+            <nav>
+                <span class="nav-bar-item"><a href="#" onclick="showSection('projects', event)" class="active">Projects</a></span>
+                <span class="nav-bar-item"><a href="#" onclick="showSection('achievements', event)">Achievements</a></span>
+            </nav>
+        </header>
+        <hr class="header-rule">
+
+        <main id="main">
+            <div id="projects" class="section active">
+                <div class="list-heading">
+                    <h1>Projects</h1>
+                    <div class="subtitle">
+                        <p>A selection of a few of my most technical and creative projects, ranging from OS development to interactive web experiences.</p>
+                    </div>
+                </div>
+                <div class="list-items">
+                    <ul>
+                        <li class="item">
+                            <h2 class="item-heading"><a href="https://github.com/WheeledCord/tetrOS" target="_blank">tetrOS</a></h2>
+                            <div class="item-content">
+                                <p>An OS that only plays Tetris, written in C and Assembly (NASM). Focused on low level system control and game logic. Complete with PIT timers, IRQs, and IDTs. Quite overkill for tetris but it runs flawlessly. This was probably the biggest and most difficult project I have done.</p>
+                            </div>
+                            <li class="item">
+                                <h2 class="item-heading"><a href="https://github.com/WheeledCord/commons-cli" target="_blank">Commons</a></h2>
+                                <div class="item-content">
+                                    <p>The backend, <a href="https://github.com/WheeledCord/commons-api" target="_blank">commons-api</a>, is written in Go with SQLite and handles all the chat logic. It supports multiple clients over HTTP and WebSockets with JSON messages. On the front end, <a href="https://github.com/WheeledCord/commons-cli" target="_blank">commons-cli</a> is a terminal based Python client using curses. Together they make a simple realtime multi client chat system I built from scratch.</p>
+                                </div>
+                            </li>
+
+
+                        <li class="item">
+                            <h2 class="item-heading"><a href="https://github.com/WheeledCord/fauxCRT" target="_blank">fauxCRT</a></h2>
+                            <div class="item-content">
+                                <p>A web based retro terminal emulator faking old DOS/UNIX systems. Features a persistent fake filesystem in cookies and commands like ls, cd, write, and read. The JavaScript is exposed inside the page, so users can tweak and modify it like in a real OS. I gave it CRT style visuals to make it feel like an actual old terminal.</p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h2 class="item-heading"><a href="https://github.com/WheeledCord/3d2048" target="_blank">3D 2048 Game (Godot)</a></h2>
+                            <div class="item-content">
+                                <p>A 3x3x3 3D variant of 2048 with camera-relative movement controls. Tiles spawn dynamically, with W/A/S/D for planar movement, Space to go up, and Shift/C to go down. Implemented in Godot using GDScript.</p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h2 class="item-heading"><a href="https://github.com/WheeledCord/snakeOS" target="_blank">SnakeOS</a></h2>
+                            <div class="item-content">
+                                <p>An OS written entirely in Assembly that only plays Snake. Not quite as good and complex as TetrOS, but it works. Quite good for something made in pure NASM Assembly.</p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <h2 class="item-heading"><a href="https://github.com/WheeledCord/DownUnderCTF-2025-Writeup" target="_blank">DownUnderCTF 2025 Writeups</a></h2>
+                            <div class="item-content">
+                                <p>A writeup of all the challenges my team solved in DownUnderCTF 2025.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <div id="achievements" class="section">
+            <div class="list-heading">
+                <h1>Achievements</h1>
+                <div class="subtitle">
+                    <p>Recognition in national and international cybersecurity competitions.</p>
+                </div>
+            </div>
+            <div class="list-items">
+                <ul>
+                    <li class="item">
+                        <h1 class="item-heading"><a href="https://2025.archives.duc.tf/scoreboard?tags=1%2C2%2C5%2C3%2C4%2C6" target="_blank">3rd Place Overall | DownUnder CTF 2025 (1st Place High School, 1st Place New Zealand)</a></h1>
+                        <div class="item-content">
+                            <p>I led my team <strong>[VuwCTF] empl*yment</strong> to 3rd place out of all eligible teams in DownUnder CTF, which is the biggest cybersecurity competition in the Southern Hemisphere with over 3,000 teams from around the world. We managed to get 1st place in the high school category and were also the top New Zealand team overall. The competition had challenges in areas like cryptography, reverse engineering, binary exploitation, and web security.</p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <h1 class="item-heading"><a href="https://cybersecuritychallenge.org.nz/" target="_blank">1st Place | High School Division, 2nd Place Overall (NZCSC 2024)</a></h1>
+                        <div class="item-content">
+                             <p>Won the High School category and placed 2nd overall (including industry competitors) at New Zealand's national cybersecurity competition. Competing alongside <strong>Ivan Shabashev</strong>, we tackled challenges across web exploitation, cryptography, reverse engineering, and forensics over a few hours at the University of Waikato. It was pretty intense going up against actual industry professionals and security teams with way more experience than us, but we managed to beat almost all of them.</p>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => link.classList.remove('active'));
+
+            document.getElementById(sectionId).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
