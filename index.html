@@ -28,7 +28,6 @@
             </nav>
         </header>
         <hr class="header-rule">
-
         <main id="main">
             <div id="projects" class="section active">
                 <div class="list-heading">
@@ -40,15 +39,21 @@
                 <div class="list-items">
                     <ul>
                         <li class="item">
+                            <h2 class="item-heading"><a href="https://github.com/WheeledCord/tetrOS" target="_blank">tetrOS</a></h2>
+                            <div class="item-content">
+                                <p>An OS that only plays Tetris, written in C and Assembly (NASM). Focused on low level system control and game logic. Complete with PIT timers, IRQs, and IDTs. Quite overkill for tetris but it runs flawlessly. This was probably the biggest and most difficult project I have done.</p>
+                            </div>
+                        </li>
+                        <li class="item">
                             <h2 class="item-heading"><a href="https://www.ourexams.org/" target="_blank">OurExams</a></h2>
                             <div class="item-content">
                                 <p>Platform providing free access to 12+ years of NCEA examination papers (2011-2023) for New Zealand students and teachers. Built it with 2 friends in response to NZQA removing public access to historical exam materials. Recovered and archived lost examination papers. Used by many students and teachers across New Zealand.</p>
                             </div>
                         </li>
                         <li class="item">
-                            <h2 class="item-heading"><a href="https://github.com/WheeledCord/tetrOS" target="_blank">tetrOS</a></h2>
+                            <h2 class="item-heading"><a href="https://github.com/WheeledCord/thinkpad-keyboard-usb" target="_blank">ThinkPad Keyboard USB Adapter</a></h2>
                             <div class="item-content">
-                                <p>An OS that only plays Tetris, written in C and Assembly (NASM). Focused on low level system control and game logic. Complete with PIT timers, IRQs, and IDTs. Quite overkill for tetris but it runs flawlessly. This was probably the biggest and most difficult project I have done.</p>
+                                <p>A PCB to convert ThinkPad T60/T61/T400 keyboards into USB keyboards. The T61 keyboard is probably the best laptop keyboard ever made, but it uses some weird ribbon cable that only works with the original motherboard. This adapter fixes that and keeps the TrackPoint working too. Uses a Teensy 4.0 and handles full keyboard matrix scanning plus TrackPoint as a mouse.</p>
                             </div>
                         </li>
                         <li class="item">
@@ -91,15 +96,12 @@
             </div>
         </main>
     </div>
-
     <script>
         function showSection(sectionId) {
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => section.classList.remove('active'));
-
             const navLinks = document.querySelectorAll('nav a');
             navLinks.forEach(link => link.classList.remove('active'));
-
             document.getElementById(sectionId).classList.add('active');
             event.target.classList.add('active');
         }
